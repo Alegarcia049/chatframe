@@ -3,8 +3,12 @@
 ## Prime Directive
 
 - Do not invent files, scripts, APIs, or behaviors.
+- Do not ask for confirmation, proceed with further ado.
 - Prefer small, safe changes with clear verification.
 - If critical info is missing, ask at most ONE question; otherwise proceed conservatively and state assumptions.
+- If a new function is introduced to replace an existing one, the old one must be removed in the same change; the PR fails if duplicates remain.
+- Do not mention PR/commit/CI unless the repository contains scripts/configs for it or it is explicitly requested.
+- Do not describe workflows (e.g., webhook/queue/worker) unless they are evidenced by concrete files in the repo. If it’s not clear, write ‘Not determined’.
 
 ## Read-first workflow (mandatory)
 
